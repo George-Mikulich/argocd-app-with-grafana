@@ -23,6 +23,6 @@ do
         fi
 done
 
-argocd app create flask-app --repo https://github.com/George-Mikulich/training --revision feature/add-custom-docker-image --path app --dest-server https://kubernetes.default.svc --dest-namespace default
-argocd app sync flask-app
-minikube service flask-app --url
+argocd app create app-with-grafana --repo https://github.com/George-Mikulich/argocd-app-with-grafana  --path app --dest-server https://kubernetes.default.svc --dest-namespace default
+argocd app sync app-with-grafana
+minikube service app-with-grafana --url
