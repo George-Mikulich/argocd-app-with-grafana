@@ -11,8 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-    - repoURL: https://github.com/George-Mikulich/argocd-app-with-grafana
-      targetRevision: HEAD
     - repoURL: https://prometheus-community.github.io/helm-charts/
       chart: prometheus
       targetRevision: 19.7.2
